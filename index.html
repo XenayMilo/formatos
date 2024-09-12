@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Formatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Convertidor de Formatos de Archivos</h1>
+    </header>
+    
+    <main>
+        <section id="upload-section">
+            <h2>Sube tu archivo y selecciona el formato</h2>
+            <form id="convert-form">
+                <input type="file" id="file-input" accept=".pdf,.jpg,.png,.webp" required>
+                <label for="format-select">Elige el formato a convertir:</label>
+                <select id="format-select" required>
+                    <option value="pdf">PDF</option>
+                    <option value="word">Word (docx)</option>
+                    <option value="jpg">JPG</option>
+                    <option value="png">PNG</option>
+                    <option value="webp">WebP</option>
+                </select>
+                <button type="submit">Convertir</button>
+            </form>
+        </section>
+        <section id="result-section">
+            <h3>Resultado:</h3>
+            <p id="result-message">Sube un archivo para ver el resultado aquí.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Convertidor de Formatos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
